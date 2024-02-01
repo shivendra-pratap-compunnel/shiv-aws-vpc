@@ -15,8 +15,4 @@ locals {
 module "base_infra" {
   source = "git::https://github.com/CD-TeraformModules/aws-vpc.git"
   name = "${local.tags.managed_by}-${local.tags.project}"
-
-  tags = merge({
-    # key = "value"
-  }, local.tags)
 }

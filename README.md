@@ -17,7 +17,7 @@ locals {
 }
 
 module "base_infra" {
-  source = "git::https://github.com/CD-TeraformModules/aws-vpc.git?ref=development"
+  source = "git::https://github.com/shivendra-pratap-compunnel/aws-vpc.git"
   name = "${local.tags.managed_by}-${local.tags.project}"
 
 }
